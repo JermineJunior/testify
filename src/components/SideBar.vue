@@ -1,3 +1,7 @@
+<script setup>
+import { RouterLink } from "vue-router";
+</script>
+
 <template>
     <div
         id="hs-application-sidebar"
@@ -147,9 +151,9 @@
                 >
                     <ul class="flex flex-col justify-between mt-6 space-y-1">
                         <li>
-                            <a
+                            <RouterLink
                                 class="flex items-center gap-x-3.5 py-2 px-2.5 bg-white/10 text-sm text-white rounded-lg hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:bg-neutral-700 dark:text-white"
-                                href="#"
+                                to="/"
                             >
                                 <svg
                                     class="shrink-0 size-4"
@@ -169,13 +173,13 @@
                                     <polyline points="9 22 9 12 15 12 15 22" />
                                 </svg>
                                 Dashboard
-                            </a>
+                            </RouterLink>
                         </li>
 
                         <li>
-                            <a
+                            <RouterLink
                                 class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-white rounded-lg hover:bg-white/10 dark:hover:bg-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                href="#"
+                                to="/editor"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -193,12 +197,12 @@
                                 </svg>
 
                                 Editor
-                            </a>
+                            </RouterLink>
                         </li>
                         <li>
-                            <a
+                            <RouterLink
                                 class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-white rounded-lg hover:bg-white/10 dark:hover:bg-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                href="#"
+                                to="/tasks"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -216,12 +220,12 @@
                                 </svg>
 
                                 Task Managment
-                            </a>
+                            </RouterLink>
                         </li>
                         <li>
-                            <a
+                            <RouterLink
                                 class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-white rounded-lg hover:bg-white/10 dark:hover:bg-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                href="#"
+                                to="/run"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -239,12 +243,12 @@
                                 </svg>
 
                                 Task Run
-                            </a>
+                            </RouterLink>
                         </li>
                         <li>
-                            <a
+                            <RouterLink
                                 class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-white rounded-lg hover:bg-white/10 dark:hover:bg-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                href="#"
+                                to="/results"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +266,7 @@
                                 </svg>
 
                                 Task Results
-                            </a>
+                            </RouterLink>
                         </li>
 
                         <div class="fixed my-2 bottom-1">
