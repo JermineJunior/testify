@@ -85,7 +85,6 @@
     <!-- ========== END MAIN CONTENT ========== -->
 </template>
 <script setup>
-import { RouterView } from "vue-router"; 
+import { RouterView } from "vue-router";
 import SideBar from "@/components/SideBar.vue";
-import Dashboard from "@/views/Dashboard.vue";
 </script>
